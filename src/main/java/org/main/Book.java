@@ -1,56 +1,58 @@
 package org.main;
 class Book {
-    public String id;
-    public String title;
-    public String author;
-    public String category;
-    public int stock;
+    private String bookId;
+    private String title;
+    private String author;
+    private String category;
+    private int stock;
+    private int duration;
 
-    public Book(String id, String title, String author, String category, int stock) {
-        this.id = id;
+    public Book(String id, String title, String author, int stock) {
+        this.bookId = id;
         this.title = title;
         this.author = author;
-        this.category = category;
         this.stock = stock;
     }
 
-    public String getId() {
-        return id;
-    }
-
     public void setId(String id) {
-        this.id = id;
+        this.bookId = id;
     }
-
-    public String getTitle() {
-        return title;
+    public String getId() {
+        return bookId;
     }
 
     public void setTitle(String title) {
         this.title = title;
     }
-
-    public String getAuthor() {
-        return author;
+    public String getTitle() {
+        return title;
     }
 
     public void setAuthor(String author) {
         this.author = author;
     }
-
-    public String getCategory() {
-        return category;
+    public String getAuthor() {
+        return author;
     }
 
     public void setCategory(String category) {
         this.category = category;
     }
-
-    public int getStock() {
-        return stock;
+    public String getCategory() {
+        return category;
     }
 
     public void setStock(int stock) {
         this.stock = stock;
+    }
+    public int getStock() {
+        return stock;
+    }
+
+    public void setDuration(int duration){
+        this.duration = duration;
+    }
+    public int getDuration(){
+        return duration;
     }
 }
